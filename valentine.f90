@@ -3,15 +3,19 @@ implicit none
 
 #include <valentine.fh>
 
-real, parameter  :: howMuchFortranYouCanHandle=0.5 ! Move this parameter
-                                                   ! closer to 1 if you
-                                                   ! despise Fortran, or
-                                                   ! move it towards 0 if
-                                                   ! you like Fortran
+real :: howMuchFortranYouCanHandle=0.5 ! Move this parameter
+                                       ! closer to 1 if you
+                                       ! despise Fortran, or
+                                       ! move it towards 0 if
+                                       ! you like Fortran
+
 
 character(100), parameter :: DONOTCHANGE="Eric.Stofferahn"
 
 print *, "Will Fortran be my Valentine?"
+print *, "Enter a value closer to 1 if you despise Fortran, or move it towards 0 if you like Fortran"
+read(5,*) howMuchFortranYouCanHandle
+
 print *, chalkHeart(howMuchFortranYouCanHandle)
 
 contains
