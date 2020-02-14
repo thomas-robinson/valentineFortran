@@ -13,5 +13,5 @@ env:
   - export FC = gfortran
 
 script:
-  - $FC valentine.f90 -o be-mine.x
+  - ${FC} valentine.f90 -o be-mine.x
   - ./be-mine.x
