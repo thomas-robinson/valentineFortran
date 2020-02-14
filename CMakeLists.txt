@@ -10,10 +10,10 @@ set( USER $ENV{USER} )
 
 list(APPEND CMAKE_Fortran_FLAGS "-fpp")
 
-configure_file( ${IN_DIR}/valentine.fh.in ${IN_DIR}/valentine.fh )
+configure_file(${IN_DIR}/valentine.fh.in ${IN_DIR}/valentine.fh.in)
 
 set( HEADERS ${IN_DIR}/valentine.fh )
-set( SOURCES valentine.f90 )
+set( SOURCES valentine.F90 )
 
 include_directories( ${IN_DIR} )
 

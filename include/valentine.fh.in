@@ -1,2 +1,2 @@
-character(100) :: MYUSER="${USER}"
+character(100) :: MYUSER="Thomas.Robinson"
 

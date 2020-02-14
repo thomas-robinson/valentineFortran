@@ -13,7 +13,10 @@ env:
   - FC=mpif90
   - FC=gfortran
 
+
+
 script:
-  - ${FC} valentine.f90 -o be-mine.x
+  - ${FC} -Iinclude valentine.f90 -o be-mine.x
   - ./test_be-mine.sh
+  - cmake
 

@@ -1,7 +1,7 @@
 program valentine
 implicit none
 
-#include <valentine.fh>
+#include <valentine.fh.in>
 
 real :: howMuchFortranYouCanHandle=0.5 ! Move this parameter
                                        ! closer to 1 if you
