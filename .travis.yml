@@ -15,7 +15,5 @@ env:
 
 script:
   - ${FC} valentine.f90 -o be-mine.x
-  - ./be-mine.x << EOF 
-  - 0.1 
-  -EOF
+  - ./test_be-mine.sh
 
