@@ -16,7 +16,7 @@ env:
 
 
 script:
-  - ${FC} -Iinclude valentine.f90 -o be-mine.x
+  - ${FC} -Iinclude valentine.F90 -o be-mine.x
   - ./test_be-mine.sh
-  - cmake
-
+  - cmake .
+  - ./test_valentine.sh
