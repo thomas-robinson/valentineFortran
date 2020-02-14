@@ -4,13 +4,14 @@ dist: bionic
 
 addons:
   apt:
+    sources:
+    - ubuntu-toolchain-r-test
     packages:
     - pkg-config gfortran openmpi-bin libopenmpi-dev
 
-
 env:
-  - export FC = mpif90
-  - export FC = gfortran
+  - FC=mpif90
+  - FC=gfortran
 
 script:
   - ${FC} valentine.f90 -o be-mine.x
